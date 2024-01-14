@@ -17,7 +17,7 @@ const AppAccount = () => {
   const items: MenuProps['items'] = [
     {
       key: '1',
-      label: '退出登录',
+      label: 'Logout',
     },
   ];
 

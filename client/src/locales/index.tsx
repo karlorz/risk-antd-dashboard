@@ -2,10 +2,12 @@ import type { IntlShape, MessageDescriptor } from 'react-intl';
 import { createIntl, useIntl, FormattedMessage as IntFormattedMessage } from 'react-intl';
 import en_US from './en_US';
 import zh_CN from './zh_CN';
+import zh_TW from './zh_TW';
 
 export const localeConfig = {
   'zh-CN': zh_CN,
   'en-US': en_US,
+  'zh-TW': zh_TW,
 };
 
 export type LocaleType = keyof typeof localeConfig;
@@ -53,15 +55,15 @@ export const getIntl = (locale?: LocaleType, changeIntl?: boolean) => {
     });
   }
   // 使用 zh-CN
-  if (localeConfig['zh-CN'])
+  if (localeConfig['en-US'])
     return createIntl({
-      locale: 'zh-CN',
-      messages: localeConfig['zh-CN'],
+      locale: 'en-US',
+      messages: localeConfig['en-US'],
     });
 
   // 如果还没有，返回一个空的
   return createIntl({
-    locale: 'zh-CN',
+    locale: 'en-US',
     messages: {},
   });
 };

@@ -13,22 +13,12 @@ const Home = memo(() => {
 
   const speedList = [
     {
-      title: '待办事项',
-      online: 24,
-      total: 70,
-    },
-    {
-      title: '待办任务',
-      online: 39,
-      total: 100,
-    },
-    {
-      title: '目标计划',
+      title: 'test1',
       online: 5,
       total: 10,
     },
     {
-      title: '评论回复',
+      title: 'test2',
       online: 10,
       total: 40,
     },
@@ -73,16 +63,16 @@ const Home = memo(() => {
             <RoseChart />
           </Card>
         </Col>
-        <Col lg={18} sm={24} xs={24}>
+        {/* <Col lg={18} sm={24} xs={24}>
           <Card size="small" title="评论列表">
             <Comment />
           </Card>
-        </Col>
-        <Col lg={6} sm={24} xs={24}>
+        </Col> */}
+        {/* <Col lg={6} sm={24} xs={24}>
           <Card size="small" title="词云">
             <WordCloudChart />
           </Card>
-        </Col>
+        </Col> */}
       </Row>
     </div>
   );

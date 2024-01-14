@@ -2,8 +2,10 @@ import { ConfigProvider, theme } from 'antd';
 import dayjs from 'dayjs';
 import 'dayjs/locale/zh-cn';
 import 'dayjs/locale/en';
+import 'dayjs/locale/zh-tw';
 import zhCN from 'antd/locale/zh_CN';
 import enUS from 'antd/locale/en_US';
+import zhTW from 'antd/locale/zh_TW';
 import 'antd/dist/reset.css';
 import { IntlProvider } from 'react-intl';
 import { Suspense, useEffect, useMemo } from 'react';
@@ -32,9 +34,16 @@ function App() {
     if (locale === 'en-US') {
       dayjs.locale('en');
       return enUS;
-    } else {
+    } else if (locale === 'zh-TW') {
+      dayjs.locale('zh-tw');
+      return zhTW;
+    } else if (locale === 'zh-CN') {
       dayjs.locale('zh-cn');
       return zhCN;
+    } else {
+      // Handle other locales or fallback to a default locale
+      dayjs.locale('en'); // Fallback to English if the locale is not recognized
+      return enUS; // Fallback data for English locale
     }
   }, [locale]);
 
@@ -75,5 +84,6 @@ function App() {
     </ConfigProvider>
   );
 }
+
 
 export default App;

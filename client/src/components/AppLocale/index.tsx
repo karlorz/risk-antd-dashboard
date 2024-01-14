@@ -12,8 +12,9 @@ const Locale = memo(() => {
 
   const menuItems: MenuProps['items'] = useMemo(() => {
     return [
-      { label: '中文', key: 'zh-CN', disabled: locale === 'zh-CN' }, // 菜单项务必填写 key
       { label: 'English', key: 'en-US', disabled: locale === 'en-US' },
+      { label: '简中', key: 'zh-CN', disabled: locale === 'zh-CN' }, // 菜单项务必填写 key
+      { label: '繁中', key: 'zh-TW', disabled: locale === 'zh-TW' },
     ];
   }, [locale]);
 

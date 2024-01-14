@@ -1,0 +1,14 @@
+{
+  "api.errorTip": "錯誤提示",
+  "api.errMsg401": "使用者沒有權限！",
+  "api.errMsg403": "使用者得到授權，但訪問被禁止！",
+  "api.errMsg404": "網路請求錯誤，未找到該資源！",
+  "api.errMsg405": "網路請求錯誤，請求方法未允許！",
+  "api.errMsg408": "網路請求超時！",
+  "api.errMsg500": "伺服器錯誤，請聯絡管理員！",
+  "api.errMsg501": "網路未實現！",
+  "api.errMsg502": "網路錯誤！",
+  "api.errMsg503": "服務不可用，伺服器暫時過載或維護！",
+  "api.errMsg504": "網路超時！",
+  "api.errMsg505": "HTTP版本不支援該請求！"
+}

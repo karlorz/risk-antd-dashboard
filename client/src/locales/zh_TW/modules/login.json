@@ -1,0 +1,9 @@
+{
+  "login.button": "登錄",
+  "login.forgotPassword": "忘記密碼",
+  "login.password": "密碼：admin123",
+  "login.passwordRules": "請輸入您的密碼！",
+  "login.rememberPassword": "記住密碼",
+  "login.userNameRules": "請輸入您的用戶名！",
+  "login.username": "用戶名：admin"
+}

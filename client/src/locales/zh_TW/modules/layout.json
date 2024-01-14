@@ -1,0 +1,16 @@
+{
+  "layout.error.403": "抱歉，您無權訪問此頁面。",
+  "layout.error.404": "抱歉，您訪問的頁面不存在。",
+  "layout.error.500": "抱歉，出了問題。",
+  "layout.error.element.content": "頁面內容有以下錯誤:",
+  "layout.memu.home": "首頁",
+  "layout.memu.nesting": "嵌套頁面",
+  "layout.memu.permissions": "權限管理",
+  "layout.memu.permissionsPage": "權限切換",
+  "layout.memu.testPermissionsPage1": "Admin權限測試頁面",
+  "layout.memu.testPermissionsPage2": "Test權限測試頁面",
+  "layout.memu.detailsPage": "詳情頁",
+  "layout.setting.layoutSettings": "布局設置",
+  "layout.setting.themeSettings": "主題設置",
+  "layout.setting.title": "設置"
+}
